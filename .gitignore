@@ -1,0 +1,51 @@
+# Gradle files
+*.iml
+.kotlin
+.gradle
+**/build/
+!src/**/build/
+local.properties
+
+# IDE files
+.idea/
+**.iml
+**.ipr
+**.iws
+*.hprof
+*.log
+
+# MacOS files
+.DS_Store
+
+# Android specific
+captures/
+.externalNativeBuild/
+.cxx/
+output.json
+
+# iOS specific
+xcuserdata/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+Pods/
+Podfile.lock
+
+# Desktop specific
+out/
+
+# Web specific
+node_modules/
+dist/
+.yarn/
+yarn-error.log
+package-lock.json
+
+# Compose Multiplatform specific
+.compose-preloader-cache/
+.kotlin-js-store/
+kotlin-js-store/
+kotlin-js-store/yarn.lock
