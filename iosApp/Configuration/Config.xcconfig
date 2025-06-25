@@ -1,6 +1,6 @@
 TEAM_ID=
 
-PRODUCT_NAME=format-shifter
+PRODUCT_NAME=Format Shifter
 PRODUCT_BUNDLE_IDENTIFIER=org.risanjayy.format.shifter.format-shifter$(TEAM_ID)
 
 CURRENT_PROJECT_VERSION=1

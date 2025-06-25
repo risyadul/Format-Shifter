@@ -119,6 +119,21 @@ compose.desktop {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "org.risanjayy.format.shifter"
             packageVersion = "1.0.0"
+            appResourcesRootDir.set(project.layout.projectDirectory.dir("resources"))
+            macOS {
+                bundleID = "org.risanjayy.format.shifter"
+                dockName = "Format Shifter"
+            }
+            windows {
+                shortcut = true
+                menuGroup = "Format Shifter"
+                upgradeUuid = "e8e7ad52-cbe3-4c5e-8131-591f9cdf6b60"
+            }
+            linux {
+                shortcut = true
+                menuGroup = "Format Shifter"
+                packageName = "format-shifter"
+            }
         }
     }
 }
