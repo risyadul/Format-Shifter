@@ -689,4 +689,45 @@ object FSTextStyle {
             fontWeight = FontWeight.Light,
             fontSize = 12.sp
         )
+
+    // Additional useful text styles
+    val bodyRegular: TextStyle
+        @Composable
+        get() = TextStyle(
+            fontFamily = FSFonts.poppins,
+            fontWeight = FontWeight.Normal,
+            fontSize = 16.sp
+        )
+
+    val bodyLargeSemiBold: TextStyle
+        @Composable
+        get() = TextStyle(
+            fontFamily = FSFonts.poppins,
+            fontWeight = FontWeight.SemiBold,
+            fontSize = 18.sp
+        )
+
+    val captionRegular: TextStyle
+        @Composable
+        get() = TextStyle(
+            fontFamily = FSFonts.poppins,
+            fontWeight = FontWeight.Normal,
+            fontSize = 12.sp
+        )
+
+    val bodyMedium: TextStyle
+        @Composable
+        get() = TextStyle(
+            fontFamily = FSFonts.poppins,
+            fontWeight = FontWeight.Medium,
+            fontSize = 16.sp
+        )
+
+    val bodyBold: TextStyle
+        @Composable
+        get() = TextStyle(
+            fontFamily = FSFonts.poppins,
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp
+        )
 }
