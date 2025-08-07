@@ -4,5 +4,9 @@
 <dict>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Format Shifter needs access to your photo library to save converted images directly to your Photos app for easy access and sharing.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Format Shifter needs permission to add converted images to your photo library so you can easily access and share your converted files.</string>
 </dict>
 </plist>

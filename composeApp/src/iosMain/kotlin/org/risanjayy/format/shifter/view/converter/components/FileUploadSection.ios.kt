@@ -1,26 +1,18 @@
 package org.risanjayy.format.shifter.view.converter.components
 
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import org.risanjayy.format.shifter.domain.service.SelectedFile
+import org.risanjayy.format.shifter.platform.IOSImagePicker
 
-/**
- * iOS implementation of file picker launcher (placeholder)
- */
 @Composable
 actual fun rememberFilePickerLauncher(
     onFilesSelected: (List<SelectedFile>) -> Unit
 ): () -> Unit {
+    // Create and remember the iOS image picker with callback
+    val imagePicker = remember { IOSImagePicker(onFilesSelected) }
+    
     return {
-        // TODO: Implement iOS file picker using UIDocumentPickerViewController
-        // For now, create mock files for testing
-        val mockFiles = listOf(
-            SelectedFile(
-                name = "sample_ios.heic",
-                size = 2 * 1024 * 1024, // 2MB
-                mimeType = "image/heic",
-                data = byteArrayOf()
-            )
-        )
-        onFilesSelected(mockFiles)
+        // Use PHPickerViewController to pick images
+        imagePicker.showPicker()
     }
 }
