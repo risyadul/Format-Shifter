@@ -1,7 +1,8 @@
 package org.risanjayy.format.shifter.view
 
+import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.safeContentPadding
+import androidx.compose.foundation.layout.windowInsetsPadding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -14,8 +15,8 @@ fun App() {
     FormatShifterTheme {
         ImageConverterScreen(
             modifier = Modifier
-                .safeContentPadding()
                 .fillMaxSize()
+                .windowInsetsPadding(WindowInsets(0, 0, 0, 0))
         )
     }
 }
